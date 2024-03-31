@@ -1,16 +1,29 @@
 import React from "react";
-import { Col, Image } from "antd";
+import { Col, Image, Badge, Row } from "antd";
+import { MessageOutlined } from "@ant-design/icons";
 
 const Header = () => {
   return (
     <header className="header">
-      <Col span={8}>
-        <Image preview={false} src="" alt="logo-image" />
-      </Col>
-      <Col span={8}>
-        <h1>Antd Dashboard</h1>
-      </Col>
-      <Col span={8}></Col>
+      <Row justify={"space-between"} align={"middle"}>
+        <Col>
+          <Image
+            preview={false}
+            src="/logo.png"
+            alt="logo-image"
+            width={50}
+            height={50}
+          />
+        </Col>
+        <Col>
+          <h1>Antd Dashboard</h1>
+        </Col>
+        <Col>
+          <Badge count={10} color="orange">
+            <MessageOutlined style={{ fontSize: "25px" }} />
+          </Badge>
+        </Col>
+      </Row>
     </header>
   );
 };

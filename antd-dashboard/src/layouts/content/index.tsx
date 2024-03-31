@@ -1,7 +1,12 @@
 import React from "react";
+import AppRouting from "../../routing";
 
 const Content = () => {
-  return <div>Content</div>;
+  return (
+    <div>
+      <AppRouting />
+    </div>
+  );
 };
 
 export default Content;
