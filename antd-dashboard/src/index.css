@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .app {
-  background-color: rgb(220, 132, 220);
+  background-color: #ddd;
   display: flex;
   flex-direction: column;
   width: 100vw;
@@ -12,11 +12,35 @@
 }
 
 /* Header */
-.header {
-  height: 50px;
-  background-color: aqua;
+header {
+  height: 70px;
+  background-color: orange;
+  padding: 0.5rem 1.5rem;
+}
+
+/* Footer */
+footer {
+  height: 70px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #e7e7e7;
+  background-color: orange;
+}
+footer svg {
+  color: #e4e4e4;
+  font-size: 25px;
+  margin: 0 0.5rem;
+}
+
+/* Sidebar & content */
+.app-content {
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
+  background-color: antiquewhite;
+}
+
+.sidebar {
+  height: calc(100vh - 140px);
+  background-color: #fff;
 }
